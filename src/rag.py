@@ -12,7 +12,7 @@ from langchain_community.document_loaders import PyPDFLoader
 
 load_dotenv()
 
-os.environ['LANGSMITH_TRACING'] = 'true'
+os.environ['LANGSMITH_TRACING'] = 'true' # Pasar a false en caso de no desear hacer TRACING
 os.environ['LANGSMITH_API_KEY'] = os.getenv('LANGSMITH_API_KEY')
 CHAT_MODEL = os.getenv('CHAT_MODEL') # Especificar modelo por variable de entorno
 
